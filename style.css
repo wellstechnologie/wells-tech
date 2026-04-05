@@ -11,11 +11,15 @@ body {
 }
 
 /* LOGO */
-.logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 3;
+.logo{
+  position:absolute;
+  top:15px;
+  left:15px;
+  z-index:2;
+}
+
+.logo img{
+  width:90px;
 }
 
 .logo img {
