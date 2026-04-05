@@ -1,1 +1,22 @@
+body {
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
 
+/* LOGO */
+.logo {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.logo img {
+  width: 250px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .logo img {
+    width: 180px;
+  }
+}
