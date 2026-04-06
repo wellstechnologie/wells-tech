@@ -1,39 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<link rel="stylesheet" href="style.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WELLS TECH & STREAM STUDIO</title>
+
+<link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
-<style>
-*{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:'Poppins',sans-serif;background:black;color:white;}
-.hero{height:100vh;background:url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;}
-.hero::after{content:"";position:absolute;width:100%;height:100%;background:rgba(0,0,0,0.7);}
-.hero-content{position:relative;z-index:1;}
-h1{font-size:3rem;color:#FFD700;text-shadow:2px 2px 5px black;}
-.hero p{font-size:1.2rem;margin:8px 0;}
-.btn{margin-top:20px;padding:12px 30px;background:red;color:white;text-decoration:none;border-radius:30px;font-weight:600;transition:0.3s;}
-.btn:hover{background:gold;color:black;box-shadow:0 0 15px gold;cursor:pointer;}
-.section{padding:50px 20px;text-align:center;opacity:0;transform:translateY(50px);transition:all 0.8s ease-in-out;}
-.section.visible{opacity:1;transform:translateY(0);}
-.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
-.card{background:#111;padding:20px;flex:1 1 200px;max-width:250px;border-radius:15px;transition:0.3s;cursor:pointer;}
-.card:hover{transform:scale(1.05);box-shadow:0 0 20px red;}
-.section h2{margin-bottom:30px;font-size:2rem;color:#FFD700;text-shadow:1px 1px 4px black;}
-footer{padding:20px;background:#000;text-align:center;border-top:1px solid #333;}
-.modal{display:none;position:fixed;z-index:10;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.9);color:white;padding-top:80px;text-align:center;}
-.modal-content{background:#222;margin:auto;padding:20px;border-radius:10px;max-width:550px;text-align:left;}
-.close{color:#FFD700;float:right;font-size:28px;font-weight:bold;cursor:pointer;}
-.close:hover{color:red;}
-.modal-content img{width:100%;border-radius:10px;margin-bottom:12px;}
-ol, ul{margin-left:20px;margin-bottom:10px;}
-@media(max-width:768px){h1{font-size:2.2rem;}.section h2{font-size:1.5rem;}.btn{padding:10px 20px;}}
-</style>
 </head>
+
 <body>
-  <div class="logo">
+
+<!-- LOGO -->
+<div class="logo">
   <img src="assets/logo.png" alt="logo">
 </div>
 
@@ -43,317 +22,151 @@ ol, ul{margin-left:20px;margin-bottom:10px;}
     <h1>WELLS TECH & STREAM STUDIO</h1>
     <p>Travail & divertissement au même endroit</p>
     <p>Là où chaque détail compte</p>
-    <p> Moroni – Malouzini |  +269 4479783</p>
-    <a class="btn" href="https://wa.me/2694479783"> Contact WhatsApp</a>
+    <p>Moroni – Malouzini | +269 4479783</p>
+    <a class="btn" href="https://wa.me/2694479783">Contact WhatsApp</a>
   </div>
 </section>
 
-<!-- CYBER SERVICES -->
+<!-- CYBER -->
 <section class="section">
-  <h2> CYBER SERVICES</h2>
+  <h2>CYBER SERVICES</h2>
   <div class="cards">
-    <div class="card" data-modal="modal-internet">Internet rapide</div>
-    <div class="card" data-modal="modal-reparation">Réparation d’ordinateurs et telephone</div>
-    <div class="card" data-modal="modal-impression">Impression & photocopie</div>
+    <div class="card" data-modal="internet">Internet rapide</div>
+    <div class="card" data-modal="reparation">Réparation PC & téléphone</div>
+    <div class="card" data-modal="impression">Impression & photocopie</div>
   </div>
 </section>
 
 <!-- STREAMING -->
 <section class="section">
-  <h2> STREAMING</h2>
+  <h2>STREAMING</h2>
   <div class="cards">
-    <div class="card" data-modal="modal-films">Films & séries</div>
-    <div class="card" data-modal="modal-kdrama">K-Drama & séries turques</div>
-    <div class="card" data-modal="modal-mangas">Mangas & animés</div>
-    <div class="card" data-modal="modal-musique">Musique & Clips</div>
-    <div class="card" data-modal="modal-documentaires">Documentaires</div>
-    <div class="card" data-modal="modal-islamique">Contenus islamiques</div>
+    <div class="card" data-modal="films">Films & séries</div>
+    <div class="card" data-modal="kdrama">K-Drama & turques</div>
+    <div class="card" data-modal="mangas">Mangas & animés</div>
+    <div class="card" data-modal="musique">Musique</div>
+    <div class="card" data-modal="doc">Documentaires</div>
+    <div class="card" data-modal="islam">Contenus islamiques</div>
   </div>
 </section>
 
-<!-- WHY -->
+<!-- POURQUOI -->
 <section class="section">
-  <h2>⭐ Pourquoi nous choisir ?</h2>
+  <h2>Pourquoi nous choisir ?</h2>
   <div class="cards">
     <div class="card">Qualité HD</div>
-    <div class="card">Espace confortable</div>
     <div class="card">Prix accessible</div>
     <div class="card">Service rapide</div>
+    <div class="card">Confort</div>
   </div>
 </section>
 
 <footer>© 2026 WELLS TECH & STREAM STUDIO</footer>
 
-<!-- MODALES CYBER -->
-<div id="modal-internet" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Internet rapide</h3><p> Wi‑Fi haut débit, connexions stables 24/7. Forfaits journaliers et mensuels disponibles.</p></div></div>
-
-<div id="modal-reparation" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Réparation d’ordinateurs</h3><p> Diagnostic complet, réparation PC & téléphones, installation Windows, optimisation & nettoyage du système.</p></div></div>
-
-<div id="modal-impression" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Impression & photocopie</h3><p> Impression couleur et noir & blanc, photocopie rapide, options posters/grands formats & services reliure.</p></div></div>
-
-<!-- STREAMING – FILMS & SERIES -->
-<div id="modal-films" class="modal">
+<!-- MODALS CYBER -->
+<div id="internet" class="modal">
   <div class="modal-content">
-    <span class="close">&times;</span><h3>Top 10 Films & Séries</h3>
+    <span class="close">&times;</span>
+    <h3>Internet rapide</h3>
+    <p>Wi-Fi haut débit 24/7.</p>
+  </div>
+</div>
+
+<div id="reparation" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Réparation</h3>
+    <p>PC, téléphones, installation système.</p>
+  </div>
+</div>
+
+<div id="impression" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Impression</h3>
+    <p>Couleur, noir & blanc, photocopie rapide.</p>
+  </div>
+</div>
+
+<!-- FILMS -->
+<div id="films" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Films & Séries</h3>
     <ol>
-      <li class="serie-item" data-serie="stranger">Stranger Things</li>
-      <li class="serie-item" data-serie="money">La Casa de Papel</li>
-      <li class="serie-item" data-serie="breaking">Breaking Bad</li>
-      <li class="serie-item" data-serie="friends">Friends</li>
-      <li class="serie-item" data-serie="witcher">The Witcher</li>
-      <li class="serie-item" data-serie="squid">Squid Game</li>
-      <li class="serie-item" data-serie="vikings">Vikings</li>
-      <li class="serie-item" data-serie="aot">Attack on Titan</li>
-      <li class="serie-item" data-serie="narcos">Narcos</li>
-      <li class="serie-item" data-serie="onepiece">One Piece</li>
+      <li class="serie" data-serie="stranger">Stranger Things</li>
+      <li class="serie" data-serie="breaking">Breaking Bad</li>
+      <li class="serie" data-serie="money">La Casa de Papel</li>
+      <li class="serie" data-serie="friends">Friends</li>
+      <li class="serie" data-serie="witcher">The Witcher</li>
     </ol>
   </div>
 </div>
 
-<!-- FILMS/SERIES DÉTAILLÉS -->
-<div id="modal-stranger" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Stranger Things</h3><img src="https://upload.wikimedia.org/wikipedia/en/f/f7/Stranger_Things_logo.png"/><p>Tout commence en novembre 1983 avec la disparition mystérieuse d'un jeune garçon, Will Byers. Alors que sa mère, Joyce, et le chef de la police, Jim Hopper, mènent l'enquête, les amis de Will (Mike, Dustin et Lucas) découvrent une jeune fille en fuite dotée de pouvoirs psychokinétiques, nommée Onze (Eleven). 5 saisons disponibles.</p></div></div>
-
-<div id="modal-money" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>La Casa de Papel</h3><img src="https://upload.wikimedia.org/wikipedia/en/4/4f/Money_Heist_Poster.jpg"/><p>Huit voleurs font une prise d'otages dans la Maison royale de la Monnaie d'Espagne, tandis qu'un génie du crime manipule la police pour mettre son plan à exécution. 5 saisons.</p></div></div>
-
-<div id="modal-breaking" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Breaking Bad</h3><img src="https://upload.wikimedia.org/wikipedia/en/6/61/Breaking_Bad_title_card.png"/><p>Walter White, 50 ans, est professeur de chimie dans un lycée du Nouveau-Mexique. Pour réunir de l'argent afin de subvenir aux besoins de sa famille, Walter met ses connaissances en chimie à profit pour fabriquer et vendre du cristal meth. 5 saisons.</p></div></div>
-
-<div id="modal-friends" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Friends</h3><img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Friends_logo.svg"/><p>Les péripéties de trois jeunes femmes et trois jeunes hommes new-yorkais liés par une profonde amitié. Entre amour, travail, famille, ils partagent leurs bonheurs et leurs soucis au Central Perk, leur café favori. 10 saisons.</p></div></div>
-
-<div id="modal-witcher" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>The Witcher</h3><img src="https://upload.wikimedia.org/wikipedia/en/0/0c/The_Witcher_title_card.png"/><p>Le sorceleur Geralt, un chasseur de monstres, se bat pour trouver sa place dans un monde où les humains se révèlent plus vicieux que les bêtes. Il est alors happé dans une mystérieuse toile tissée par les forces luttant pour contrôler le monde. 3 saisons.</p></div></div>
-
-<div id="modal-squid" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Squid Game</h3><img src="https://upload.wikimedia.org/wikipedia/en/f/f9/Squid_Game_poster.jpg"/><p>Des personnes en difficultés financières sont invitées à une mystérieuse compétition de survie. Participant à une série de jeux traditionnels pour enfants, mais avec des rebondissements mortels, elles risquent leur vie pour une grosse somme d'argent. 3 saisons.</p></div></div>
-
-<div id="modal-vikings" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Vikings</h3><img src="https://upload.wikimedia.org/wikipedia/en/9/9c/Vikings_season_6_poster.jpg"/><p>Scandinavie, à la fin du 8e siècle. Ragnar Lodbrok, un jeune guerrier viking, est avide d'aventures et de nouvelles conquêtes. Lassé des pillages sur les terres de l'est, il se met en tête d'explorer l'ouest par la mer 6 saisons.</p></div></div>
-
-<div id="modal-aot" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Attack on Titan</h3><img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Attack_on_Titan_Season_4.png"/><p>L’humanité lutte contre des géants titanesques. 4 saisons.</p></div></div>
-
-<div id="modal-narcos" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Narcos</h3><img src="https://upload.wikimedia.org/wikipedia/en/c/c9/Narcos_season_1.jpg"/><p>Inspirée de l'histoire du célèbre narcotrafiquant de Medellín Pablo Escobar, cette série raconte la guerre sanglante des cartels en Colombie. 3 saisons.</p></div></div>
-
-<div id="modal-onepiece" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>One Piece</h3><img src="https://upload.wikimedia.org/wikipedia/en/6/6e/One_Piece_Logo.png"/><p>Dans un monde rempli de pirates, Monkey D. Luffy, accompagné de son nouvel équipage, part à l'aventure pour retrouver un mystérieux trésor légendaire et ainsi devenir le nouveau "Roi des Pirates". 2 saisons.</p></div></div>
-
-<!-- K‑DRAMA & TURQUES DÉTAILLÉS -->
-<div id="modal-kdrama" class="modal">
+<!-- DÉTAILS EXEMPLE -->
+<div id="stranger" class="modal">
   <div class="modal-content">
-    <span class="close">&times;</span><h3>Top 10 K‑Drama & Séries Turques</h3>
-    <ol>
-      <li class="serie-item" data-serie="crash">Crash Landing on You</li>
-      <li class="serie-item" data-serie="descendants">Descendants of the Sun</li>
-      <li class="serie-item" data-serie="magnificent">Magnificent Century</li>
-      <li class="serie-item" data-serie="lovealarm">Love Alarm</li>
-      <li class="serie-item" data-serie="vincenzo">Vincenzo</li>
-      <li class="serie-item" data-serie="startupl">Start-Up</li>
-      <li class="serie-item" data-serie="hospital">Hospital Playlist</li>
-      <li class="serie-item" data-serie="reply1988">Reply 1988</li>
-      <li class="serie-item" data-serie="myname">My Name</li>
-      <li class="serie-item" data-serie="itaewon">Itaewon Class</li>
-    </ol>
+    <span class="close">&times;</span>
+    <h3>Stranger Things</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/f7/Stranger_Things_logo.png">
+    <p>Une mystérieuse disparition change tout...</p>
   </div>
 </div>
 
-<!-- DÉTAILS K‑DRAMA -->
-<div id="modal-crash" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Crash Landing on You</h3><img src="https://upload.wikimedia.org/wikipedia/en/8/81/Crash_Landing_on_You.jpg"/><p>Un accident de parapente fait tomber une héritière sud-coréenne en Corée du Nord. Elle atterrit également dans la vie d'un officier de l'armée, qui décide d'aider la jeune femme à se cacher. 16 épisodes.</p></div></div>
-
-<div id="modal-descendants" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Descendants of the Sun</h3><img src="https://upload.wikimedia.org/wikipedia/en/5/55/Descendants_of_the_Sun.jpg"/><p>Un soldat appartenant aux Forces spéciales sud-coréennes tombe amoureux d'une belle chirurgienne. Cependant, leur romance est de courte durée, car leurs professions respectives les séparent. 16 épisodes.</p></div></div>
-
-<div id="modal-magnificent" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Magnificent Century</h3><img src="https://upload.wikimedia.org/wikipedia/en/0/02/Muhte%C5%9Fem_Y%C3%BCzy%C4%9F%C3%BCl_poster.jpg"/><p>Fiction historique basée sur la vie et la Cour du sultan ottoman Suleyman le Magnifique ainsi que son épouse Hurrem Sultan. Il est le sultan qui a régné le plus longtemps dans l'Empire ottoman. 4 saisons.</p></div></div>
-
-<div id="modal-lovealarm" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Love Alarm</h3><img src="https://upload.wikimedia.org/wikipedia/en/e/e4/Love_Alarm.jpg"/><p>Dans un monde où une application avertit les gens si quelqu'un du voisinage les trouve à son goût, un lycéen conquiert le c?ur des filles à 10 mètres à la ronde, sauf celui de Jojo. 2 saisons.</p></div></div>
-
-<div id="modal-vincenzo" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Vincenzo</h3><img src="https://upload.wikimedia.org/wikipedia/en/6/65/Vincenzo_Official_Poster.jpg"/><p>Profitant d'une visite dans sa Corée du Sud natale, Park Joo-hyung, un avocat mafieux italo-coréen connu sous le nom de Vincenzo Cassano, s'attaque à un puissant conglomérat pharmaceutique et rend justice à sa manière. 1 saison.</p></div></div>
-
-<div id="modal-startupl" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Start‑Up</h3><img src="https://upload.wikimedia.org/wikipedia/en/1/13/Start‑Up_K‑Drama.jpg"/><p>Seo Dal Mi rêve de devenir le Steve Jobs de la Corée du Sud. Avec son premier amour à ses côtés, qui est un investisseur et un homme d'affaires, le succès pourrait bien être à portée de main. 1 saison.</p></div></div>
-
-<div id="modal-hospital" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Hospital Playlist</h3><img src="https://upload.wikimedia.org/wikipedia/en/0/07/Hospital_Playlist.jpg"/><p>Environ 20 ans après leurs débuts en tant que médecins, cinq amis et collègues évoluent dans le même hôpital. Bien que leur vie quotidienne semble ordinaire, ils sont les témoins de la naissance et de la mort de personnes au jour le jour. 2 saisons.</p></div></div>
-
-<div id="modal-reply1988" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Reply 1988</h3><img src="https://upload.wikimedia.org/wikipedia/en/7/7e/Reply_1988.jpg"/><p>Voisins depuis leur plus tendre enfance, cinq adolescents ont grandi ensemble et sont aujourd'hui de jeunes lycéens. Entre premiers amours et premières responsabilités, ces cinq amis entrent progressivement dans leur nouvelle vie d'adulte. 1 saison.</p></div></div>
-
-<div id="modal-myname" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>My Name</h3><img src="https://upload.wikimedia.org/wikipedia/en/4/47/My_Name.jpg"/><p>Après le meurtre de son père, une femme vengeresse place sa confiance dans un puissant patron du crime. Elle entre dans la police sous sa direction. 1 saison.</p></div></div>
-
-<div id="modal-itaewon" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Itaewon Class</h3><img src="https://upload.wikimedia.org/wikipedia/en/4/41/Itaewon_Class.jpg"/><p>Un ancien détenu et son groupe d'amis sautent le pas et tentent enfin de réaliser leur rêve, celui d'ouvrir un bar dans un quartier pittoresque de Séoul. Cependant, ils vont devoir faire face à une sérieuse concurrence. 1 saison.</p></div></div> <div id="modal-mangas" class="modal">
+<div id="breaking" class="modal">
   <div class="modal-content">
-    <span class="close">&times;</span><h3>Top 10 Mangas & Animés</h3>
-    <ol>
-      <li class="serie-item" data-serie="naruto">Naruto</li>
-      <li class="serie-item" data-serie="onepiece">One Piece</li>
-      <li class="serie-item" data-serie="bleach">Bleach</li>
-      <li class="serie-item" data-serie="attacktitan">Attack on Titan</li>
-      <li class="serie-item" data-serie="myhero">My Hero Academia</li>
-      <li class="serie-item" data-serie="demon">Demon Slayer</li>
-      <li class="serie-item" data-serie="dragonball">Dragon Ball Z</li>
-      <li class="serie-item" data-serie="fairytail">Fairy Tail</li>
-      <li class="serie-item" data-serie="deathnote">Death Note</li>
-      <li class="serie-item" data-serie="fullmetal">Fullmetal Alchemist</li>
-    </ol>
+    <span class="close">&times;</span>
+    <h3>Breaking Bad</h3>
+    <p>Un prof de chimie devient producteur de drogue.</p>
   </div>
 </div>
 
-<div id="modal-naruto" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Naruto</h3><img src="https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg"/><p>L’histoire de Naruto Uzumaki, ninja ambitieux cherchant reconnaissance. 720 épisodes.</p></div></div>
-
-<div id="modal-onepiece" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>One Piece</h3><img src="https://upload.wikimedia.org/wikipedia/en/6/6e/One_Piece_Logo.png"/><p>Luffy et son équipage partent à la recherche du trésor ultime, le One Piece. +1000 épisodes.</p></div></div>
-
-<div id="modal-bleach" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Bleach</h3><img src="https://upload.wikimedia.org/wikipedia/en/c/c4/Bleach_Anime_Cover.png"/><p>Ichigo Kurosaki devient Shinigami pour protéger les vivants des esprits maléfiques. 366 épisodes.</p></div></div>
-
-<div id="modal-attacktitan" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Attack on Titan</h3><img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Attack_on_Titan_Season_4.png"/><p>L’humanité lutte contre des titans géants. 4 saisons.</p></div></div>
-
-<div id="modal-myhero" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>My Hero Academia</h3><img src="https://upload.wikimedia.org/wikipedia/en/3/34/My_Hero_Academia_Logo.png"/><p>Izuku Midoriya poursuit son rêve de devenir héros dans un monde de super-pouvoirs. 6 saisons.</p></div></div>
-
-<div id="modal-demon" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Demon Slayer</h3><img src="https://upload.wikimedia.org/wikipedia/en/a/a8/Demon_Slayer_logo.png"/><p>Tanjiro Kamado devient chasseur de démons après le massacre de sa famille. 2 saisons + films.</p></div></div>
-
-<div id="modal-dragonball" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Dragon Ball Z</h3><img src="https://upload.wikimedia.org/wikipedia/en/f/fc/Dragon_Ball_Z_Logo.png"/><p>Goku protège la Terre avec ses amis contre des ennemis puissants. 291 épisodes.</p></div></div>
-
-<div id="modal-fairytail" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Fairy Tail</h3><img src="https://upload.wikimedia.org/wikipedia/en/1/10/FairyTailLogo.png"/><p>Lucy et Natsu vivent aventures magiques au sein de la guilde Fairy Tail. 328 épisodes.</p></div></div>
-
-<div id="modal-deathnote" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Death Note</h3><img src="https://upload.wikimedia.org/wikipedia/en/6/6f/Death_Note_Vol_1.png"/><p>Light Yagami découvre un carnet capable de tuer et devient un justicier controversé. 37 épisodes.</p></div></div>
-
-<div id="modal-fullmetal" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Fullmetal Alchemist</h3><img src="https://upload.wikimedia.org/wikipedia/en/8/81/Fullmetal_Alchemist_Logo.png"/><p>Deux frères alchimistes tentent de récupérer ce qu’ils ont perdu. 64 épisodes (Brotherhood).</p></div></div>
-
-<!-- MUSIQUE & CLIPS -->
-<div id="modal-musique" class="modal">
+<div id="money" class="modal">
   <div class="modal-content">
-    <span class="close">&times;</span><h3>Top 10 Musique & Clips</h3>
-    <ol>
-      <li class="serie-item" data-serie="taylor">Taylor Swift</li>
-      <li class="serie-item" data-serie="bts">BTS</li>
-      <li class="serie-item" data-serie="drake">Drake</li>
-      <li class="serie-item" data-serie="adele">Adele</li>
-      <li class="serie-item" data-serie="ed">Ed Sheeran</li>
-      <li class="serie-item" data-serie="rihanna">Rihanna</li>
-      <li class="serie-item" data-serie="theweeknd">The Weeknd</li>
-      <li class="serie-item" data-serie="billie">Billie Eilish</li>
-      <li class="serie-item" data-serie="shakira">Shakira</li>
-      <li class="serie-item" data-serie="justin">Justin Bieber</li>
-    </ol>
+    <span class="close">&times;</span>
+    <h3>La Casa de Papel</h3>
+    <p>Un braquage intelligent et spectaculaire.</p>
   </div>
 </div>
 
-<div id="modal-taylor" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Taylor Swift</h3><img src="https://upload.wikimedia.org/wikipedia/en/f/f6/Taylor_Swift_-_Midnights.png"/><p>Chanteuse pop et country célèbre dans le monde entier. Albums récents : Midnights, Red.</p></div></div>
-
-<div id="modal-bts" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>BTS</h3><img src="https://upload.wikimedia.org/wikipedia/en/0/0c/BTS-logo.png"/><p>Boy band sud-coréen mondialement connu. Hits : Dynamite, Butter, Yet to Come.</p></div></div>
-
-<div id="modal-drake" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Drake</h3><img src="https://upload.wikimedia.org/wikipedia/en/5/53/Drake_-_Certified_Lover_Boy.png"/><p>Rappeur et chanteur canadien, connu pour : Hotline Bling, God’s Plan.</p></div></div>
-
-<div id="modal-adele" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Adele</h3><img src="https://upload.wikimedia.org/wikipedia/en/8/85/Adele_-_30.png"/><p>Chanteuse britannique célèbre pour : Hello, Easy On Me.</p></div></div>
-
-<div id="modal-ed" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Ed Sheeran</h3><img src="https://upload.wikimedia.org/wikipedia/en/4/45/Ed_Sheeran_-_Divide.png"/><p>Chanteur-compositeur britannique. Hits : Shape of You, Perfect.</p></div></div>
-
-<div id="modal-rihanna" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Rihanna</h3><img src="https://upload.wikimedia.org/wikipedia/en/2/23/Rihanna_-_Anti.png"/><p>Chanteuse barbadienne. Hits : Umbrella, Diamonds, Lift Me Up.</p></div></div>
-
-<div id="modal-theweeknd" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>The Weeknd</h3><img src="https://upload.wikimedia.org/wikipedia/en/0/05/The_Weeknd_-_After_Hours.png"/><p>Chanteur canadien. Hits : Blinding Lights, Save Your Tears.</p></div></div>
-
-<div id="modal-billie" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Billie Eilish</h3><img src="https://upload.wikimedia.org/wikipedia/en/f/f0/Billie_Eilish_-_Happier_Than_Ever.png"/><p>Chanteuse américaine alternative, connue pour : Bad Guy, Happier Than Ever.</p></div></div>
-
-<div id="modal-shakira" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Shakira</h3><img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Shakira_-_El_Dorado.png"/><p>Chanteuse colombienne célèbre pour : Hips Don’t Lie, Waka Waka.</p></div></div>
-
-<div id="modal-justin" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Justin Bieber</h3><img src="https://upload.wikimedia.org/wikipedia/en/5/51/Justin_Bieber_-_Justice.png"/><p>Chanteur canadien pop/R&B. Hits : Baby, Peaches.</p></div></div>
-<div id="modal-documentaires" class="modal">
+<div id="friends" class="modal">
   <div class="modal-content">
-    <span class="close">&times;</span><h3>Top 10 Documentaires</h3>
-    <ol>
-      <li class="serie-item" data-serie="planetearth">Planet Earth</li>
-      <li class="serie-item" data-serie="blueplanet">Blue Planet</li>
-      <li class="serie-item" data-serie="cosmos">Cosmos</li>
-      <li class="serie-item" data-serie="thelastdance">The Last Dance</li>
-      <li class="serie-item" data-serie="blackfish">Blackfish</li>
-      <li class="serie-item" data-serie="ourplanet">Our Planet</li>
-      <li class="serie-item" data-serie="makingamurderer">Making a Murderer</li>
-      <li class="serie-item" data-serie="chefstable">Chef’s Table</li>
-      <li class="serie-item" data-serie="insidebill">Inside Bill’s Brain</li>
-      <li class="serie-item" data-serie="americanfactory">American Factory</li>
-    </ol>
+    <span class="close">&times;</span>
+    <h3>Friends</h3>
+    <p>Une bande d’amis à New York.</p>
   </div>
 </div>
 
-<!-- Documentaires détaillés -->
-<div id="modal-planetearth" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Planet Earth</h3><img src="https://upload.wikimedia.org/wikipedia/en/4/43/Planet_Earth_title_card.jpg"/><p>Exploration incroyable des paysages naturels de la planète Terre. 11 épisodes.</p></div></div>
-
-<div id="modal-blueplanet" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Blue Planet</h3><img src="https://upload.wikimedia.org/wikipedia/en/2/2b/Blue_Planet_II.png"/><p>Focus sur les océans et leurs habitants. 8 épisodes.</p></div></div>
-
-<div id="modal-cosmos" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Cosmos</h3><img src="https://upload.wikimedia.org/wikipedia/en/d/d7/Cosmos_A_SpacerTimeOdyssey_Poster.jpg"/><p>Exploration scientifique de l’univers avec Neil deGrasse Tyson. 13 épisodes.</p></div></div>
-
-<div id="modal-thelastdance" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>The Last Dance</h3><img src="https://upload.wikimedia.org/wikipedia/en/1/1b/The_Last_Dance_documentary.jpg"/><p>Documentaire sur la carrière de Michael Jordan et les Chicago Bulls. 10 épisodes.</p></div></div>
-
-<div id="modal-blackfish" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Blackfish</h3><img src="https://upload.wikimedia.org/wikipedia/en/5/5b/Blackfish_poster.jpg"/><p>Enquête sur les orques en captivité. Film documentaire.</p></div></div>
-
-<div id="modal-ourplanet" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Our Planet</h3><img src="https://upload.wikimedia.org/wikipedia/en/f/f0/Our_Planet_title_card.jpg"/><p>Documentaire sur les effets du changement climatique sur la nature. 8 épisodes.</p></div></div>
-
-<div id="modal-makingamurderer" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Making a Murderer</h3><img src="https://upload.wikimedia.org/wikipedia/en/e/e7/Making_a_Murderer_Documentary.jpg"/><p>Histoire vraie d’un homme accusé à tort de meurtre. 2 saisons.</p></div></div>
-
-<div id="modal-chefstable" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Chef’s Table</h3><img src="https://upload.wikimedia.org/wikipedia/en/7/7b/Chefs_Table_title_card.jpg"/><p>Portraits de chefs renommés et leur art culinaire. 6 saisons.</p></div></div>
-
-<div id="modal-insidebill" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Inside Bill’s Brain</h3><img src="https://upload.wikimedia.org/wikipedia/en/e/e7/Inside_Bill%27s_Brain_Poster.jpg"/><p>Portrait de Bill Gates et son travail philanthropique. 3 épisodes.</p></div></div>
-
-<div id="modal-americanfactory" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>American Factory</h3><img src="https://upload.wikimedia.org/wikipedia/en/c/c0/American_Factory_Poster.png"/><p>Documentaire sur une usine sino-américaine et la culture du travail. Film documentaire.</p></div></div>
-
-<!-- CONTENUS ISLAMIQUES -->
-<div id="modal-islamique" class="modal">
+<div id="witcher" class="modal">
   <div class="modal-content">
-    <span class="close">&times;</span><h3>Top 10 Contenus Islamiques</h3>
-    <ol>
-      <li class="serie-item" data-serie="quran">Lecture du Coran</li>
-      <li class="serie-item" data-serie="hadith">Hadiths authentiques</li>
-      <li class="serie-item" data-serie="tajwid">Cours de Tajwid</li>
-      <li class="serie-item" data-serie="seerah">Seerah du Prophète</li>
-      <li class="serie-item" data-serie="fiqh">Fiqh simplifié</li>
-      <li class="serie-item" data-serie="islamicstories">Histoires islamiques</li>
-      <li class="serie-item" data-serie="dua">Duas & invocations</li>
-      <li class="serie-item" data-serie="islamiclecture">Conférences islamiques</li>
-      <li class="serie-item" data-serie="ramadan">Ramadan & pratique</li>
-      <li class="serie-item" data-serie="islamicmusic">Nasheeds</li>
-    </ol>
+    <span class="close">&times;</span>
+    <h3>The Witcher</h3>
+    <p>Un chasseur de monstres dans un monde magique.</p>
   </div>
 </div>
 
-<!-- Contenus islamiques détaillés -->
-<div id="modal-quran" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Lecture du Coran</h3><p>Écoute et lecture du Coran avec traduction en français et arabe.</p></div></div>
-
-<div id="modal-hadith" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Hadiths authentiques</h3><p>Collection de hadiths authentiques avec explication concise.</p></div></div>
-
-<div id="modal-tajwid" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Cours de Tajwid</h3><p>Apprenez la bonne prononciation et récitation du Coran.</p></div></div>
-
-<div id="modal-seerah" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Seerah du Prophète</h3><p>Biographie et enseignements du Prophète Muhammad (paix soit sur lui).</p></div></div>
-
-<div id="modal-fiqh" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Fiqh simplifié</h3><p>Introduction aux règles et pratiques de l’Islam de manière simple.</p></div></div>
-
-<div id="modal-islamicstories" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Histoires islamiques</h3><p>Récits édifiants sur les prophètes et compagnons.</p></div></div>
-
-<div id="modal-dua" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Duas & invocations</h3><p>Apprenez des prières quotidiennes et invocations islamiques.</p></div></div>
-
-<div id="modal-islamiclecture" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Conférences islamiques</h3><p>Discours et conférences de savants reconnus.</p></div></div>
-
-<div id="modal-ramadan" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Ramadan & pratique</h3><p>Guides pratiques pour le Ramadan, jeûne et prières.</p></div></div>
-
-<div id="modal-islamicmusic" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Nasheeds</h3><p>Écoute de chants religieux islamiques (sans instruments).</p></div></div>
-
-<!-- SCRIPT JS -->
 <script>
-// Animation scroll
-const sections = document.querySelectorAll('.section');
-window.addEventListener('scroll', () => {
-  sections.forEach(section => {
-    const top = section.getBoundingClientRect().top;
-    if(top < window.innerHeight - 100) section.classList.add('visible');
-  });
-});
-
-// Ouvrir et fermer les modales
-const cards = document.querySelectorAll('.card, .serie-item');
-cards.forEach(card => {
-  card.addEventListener('click', () => {
-    const modalId = card.dataset.modal || card.dataset.serie;
-    const modal = document.getElementById(modalId);
-    if(modal) modal.style.display = 'block';
-  });
-});
-
+const cards = document.querySelectorAll('.card, .serie');
 const closeBtns = document.querySelectorAll('.close');
-closeBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    btn.parentElement.parentElement.style.display = 'none';
+
+cards.forEach(c => {
+  c.addEventListener('click', () => {
+    const id = c.dataset.modal || c.dataset.serie;
+    const modal = document.getElementById(id);
+    if(modal) modal.style.display = "block";
   });
 });
 
-// Fermer modale en cliquant en dehors
-window.addEventListener('click', (e) => {
-  if(e.target.classList.contains('modal')) e.target.style.display = 'none';
+closeBtns.forEach(btn => {
+  btn.onclick = () => btn.closest('.modal').style.display = "none";
 });
+
+window.onclick = e => {
+  if(e.target.classList.contains('modal')){
+    e.target.style.display = "none";
+  }
+};
 </script>
+
+</body>
+</html>
