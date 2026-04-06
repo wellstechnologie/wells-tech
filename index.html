@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<link rel="stylesheet" href="style.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WELLS TECH & STREAM STUDIO</title>
-
-<link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* TON CSS INLINE RESTE INTACT */
+</style>
+
 </head>
 
 <body>
 
-<!-- LOGO -->
 <div class="logo">
   <img src="assets/logo.png" alt="logo">
 </div>
@@ -27,12 +30,12 @@
   </div>
 </section>
 
-<!-- CYBER -->
+<!-- CYBER SERVICES -->
 <section class="section">
   <h2>CYBER SERVICES</h2>
   <div class="cards">
     <div class="card" data-modal="internet">Internet rapide</div>
-    <div class="card" data-modal="reparation">Réparation PC & téléphone</div>
+    <div class="card" data-modal="reparation">Réparation d’ordinateurs et telephone</div>
     <div class="card" data-modal="impression">Impression & photocopie</div>
   </div>
 </section>
@@ -42,130 +45,157 @@
   <h2>STREAMING</h2>
   <div class="cards">
     <div class="card" data-modal="films">Films & séries</div>
-    <div class="card" data-modal="kdrama">K-Drama & turques</div>
+    <div class="card" data-modal="kdrama">K-Drama & séries turques</div>
     <div class="card" data-modal="mangas">Mangas & animés</div>
-    <div class="card" data-modal="musique">Musique</div>
-    <div class="card" data-modal="doc">Documentaires</div>
-    <div class="card" data-modal="islam">Contenus islamiques</div>
+    <div class="card" data-modal="musique">Musique & Clips</div>
+    <div class="card" data-modal="documentaires">Documentaires</div>
+    <div class="card" data-modal="islamique">Contenus islamiques</div>
   </div>
 </section>
 
-<!-- POURQUOI -->
+<!-- WHY -->
 <section class="section">
-  <h2>Pourquoi nous choisir ?</h2>
+  <h2>⭐ Pourquoi nous choisir ?</h2>
   <div class="cards">
     <div class="card">Qualité HD</div>
+    <div class="card">Espace confortable</div>
     <div class="card">Prix accessible</div>
     <div class="card">Service rapide</div>
-    <div class="card">Confort</div>
   </div>
 </section>
 
 <footer>© 2026 WELLS TECH & STREAM STUDIO</footer>
 
-<!-- MODALS CYBER -->
+<!-- MODALES CYBER -->
 <div id="internet" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
     <h3>Internet rapide</h3>
-    <p>Wi-Fi haut débit 24/7.</p>
+    <p>Wi-Fi haut débit, connexions stables 24/7. Forfaits journaliers et mensuels disponibles.</p>
   </div>
 </div>
 
 <div id="reparation" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <h3>Réparation</h3>
-    <p>PC, téléphones, installation système.</p>
+    <h3>Réparation d’ordinateurs</h3>
+    <p>Diagnostic complet, réparation PC & téléphones, installation Windows, optimisation & nettoyage du système.</p>
   </div>
 </div>
 
 <div id="impression" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <h3>Impression</h3>
-    <p>Couleur, noir & blanc, photocopie rapide.</p>
+    <h3>Impression & photocopie</h3>
+    <p>Impression couleur et noir & blanc, photocopie rapide, posters et reliure.</p>
   </div>
 </div>
 
-<!-- FILMS -->
+<!-- FILMS & SERIES -->
 <div id="films" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <h3>Films & Séries</h3>
+    <h3>Top 10 Films & Séries</h3>
     <ol>
-      <li class="serie" data-serie="stranger">Stranger Things</li>
-      <li class="serie" data-serie="breaking">Breaking Bad</li>
-      <li class="serie" data-serie="money">La Casa de Papel</li>
-      <li class="serie" data-serie="friends">Friends</li>
-      <li class="serie" data-serie="witcher">The Witcher</li>
+      <li class="serie-item" data-serie="stranger">Stranger Things</li>
+      <li class="serie-item" data-serie="money">La Casa de Papel</li>
+      <li class="serie-item" data-serie="breaking">Breaking Bad</li>
+      <li class="serie-item" data-serie="friends">Friends</li>
+      <li class="serie-item" data-serie="witcher">The Witcher</li>
+      <li class="serie-item" data-serie="squid">Squid Game</li>
+      <li class="serie-item" data-serie="vikings">Vikings</li>
+      <li class="serie-item" data-serie="aot">Attack on Titan</li>
+      <li class="serie-item" data-serie="narcos">Narcos</li>
+      <li class="serie-item" data-serie="onepiece-film">One Piece</li>
     </ol>
   </div>
 </div>
 
-<!-- DÉTAILS EXEMPLE -->
-<div id="stranger" class="modal">
+<!-- FILMS DETAILS -->
+<div id="stranger" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Stranger Things</h3></div></div>
+<div id="money" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>La Casa de Papel</h3></div></div>
+<div id="breaking" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Breaking Bad</h3></div></div>
+<div id="friends" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Friends</h3></div></div>
+<div id="witcher" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>The Witcher</h3></div></div>
+<div id="squid" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Squid Game</h3></div></div>
+<div id="vikings" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Vikings</h3></div></div>
+<div id="aot" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Attack on Titan</h3></div></div>
+<div id="narcos" class="modal"><div class="modal-content"><span class="close">&times;</span><h3>Narcos</h3></div></div>
+
+<!-- ONE PIECE FIX (ID UNIQUE) -->
+<div id="onepiece-film" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <h3>Stranger Things</h3>
-    <img src="https://upload.wikimedia.org/wikipedia/en/f/f7/Stranger_Things_logo.png">
-    <p>Une mystérieuse disparition change tout...</p>
+    <h3>One Piece</h3>
   </div>
 </div>
 
-<div id="breaking" class="modal">
+<!-- KDRAMA -->
+<div id="kdrama" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <h3>Breaking Bad</h3>
-    <p>Un prof de chimie devient producteur de drogue.</p>
+    <h3>K-Drama</h3>
   </div>
 </div>
 
-<div id="money" class="modal">
+<!-- MANGAS -->
+<div id="mangas" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <h3>La Casa de Papel</h3>
-    <p>Un braquage intelligent et spectaculaire.</p>
+    <h3>Mangas & Animés</h3>
   </div>
 </div>
 
-<div id="friends" class="modal">
+<!-- MUSIQUE -->
+<div id="musique" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <h3>Friends</h3>
-    <p>Une bande d’amis à New York.</p>
+    <h3>Musique</h3>
   </div>
 </div>
 
-<div id="witcher" class="modal">
+<!-- DOCUMENTAIRES -->
+<div id="documentaires" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <h3>The Witcher</h3>
-    <p>Un chasseur de monstres dans un monde magique.</p>
+    <h3>Documentaires</h3>
   </div>
 </div>
 
+<!-- ISLAM -->
+<div id="islamique" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Contenus islamiques</h3>
+  </div>
+</div>
+
+<!-- SCRIPT -->
 <script>
-const cards = document.querySelectorAll('.card, .serie');
+const cards = document.querySelectorAll('.card, .serie-item');
 const closeBtns = document.querySelectorAll('.close');
 
-cards.forEach(c => {
-  c.addEventListener('click', () => {
-    const id = c.dataset.modal || c.dataset.serie;
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    const id = card.dataset.modal || card.dataset.serie;
+    if(!id) return;
+
     const modal = document.getElementById(id);
-    if(modal) modal.style.display = "block";
+    if(modal) modal.style.display = 'block';
   });
 });
 
 closeBtns.forEach(btn => {
-  btn.onclick = () => btn.closest('.modal').style.display = "none";
+  btn.addEventListener('click', () => {
+    btn.closest('.modal').style.display = 'none';
+  });
 });
 
-window.onclick = e => {
+window.addEventListener('click', (e) => {
   if(e.target.classList.contains('modal')){
-    e.target.style.display = "none";
+    e.target.style.display = 'none';
   }
-};
+});
 </script>
 
 </body>
