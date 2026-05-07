@@ -1,3 +1,19 @@
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(180deg,#000,#050505,#000);
+}
+
+.card{
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px red;
+}
 *{
   margin:0;
   padding:0;
